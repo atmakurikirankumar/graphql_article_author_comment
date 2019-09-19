@@ -8,14 +8,14 @@ type Query {
 type Mutation {
     createArticle(input: CreateArticleInput!): Article!
     updateArticle(input: UpdateArticleInput!): Article!
-    deleteArticle(id: Int!): Int!
+    deleteArticle(id: Int!): String
     
     createProfile(input: CreateProfileInput!): Profile!
     updateProfile(input: UpdateProfileInput!): Profile!
-    deleteProfile(id: Int!): Int!
+    deleteProfile(id: Int!): String
     
     createComment(input: CreateCommentInput!): Comment!
-    deleteComment(id: Int!): Int!
+    deleteComment(id: Int!): String
 }
 
 type Article {
